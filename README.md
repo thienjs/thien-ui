@@ -181,3 +181,5 @@ Change the `alias` to point to where those packages are actually installed. This
 An alternative to fixing this problem would be to remove aliases altogether and define the dependencies referenced as aliases as dev dependencies instead. [However, that might cause other problems.](https://github.com/palmerhq/tsdx/issues/64)
 
 https://www.youtube.com/watch?v=aVFasPXkyRE
+https://www.youtube.com/watch?v=qSkHRVLcj6U
+https://www.youtube.com/watch?v=qi-do2A80hc
