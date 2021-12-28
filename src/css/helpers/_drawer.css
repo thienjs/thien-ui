@@ -1,0 +1,75 @@
+.drawer {
+   @apply bg-white absolute top-0 right-0 bottom-0 shadow-dark-gray-left flex flex-col z-20;
+
+   &--background {
+      @apply bg-opacity-50 bg-gray-200 fixed top-0 left-0 h-screen w-screen z-10;
+   }
+   
+   &--header {
+      @apply h-20 px-10 py-4 text-xl font-semibold border-l-2 border-b-1 border-gray-200 relative flex-shrink-0 flex items-center;
+   }
+
+   &--xs {
+      @apply w-3xs;
+   }
+
+   &--sm {
+      @apply w-2xs;
+   }
+   
+   &--md {
+      @apply w-xs;
+   }
+   
+   &--lg {
+      @apply sm:w-md w-xs;
+   }
+   
+   &--xl {
+      @apply md:w-lg sm:w-md w-xs;
+   }
+   
+   &--2xl {
+      @apply lg:w-xl md:w-lg sm:w-md w-xs;
+   }
+   
+   &--3xl {
+      @apply xl:w-2xl lg:w-xl md:w-lg sm:w-md w-xs;
+   }
+   
+   &--header-button {
+      @apply p-2 absolute -left-5 top-5;
+
+      &--blue {
+         @apply shadow-blue;
+      }
+
+      &--red {
+         @apply shadow-red;
+      }
+
+      &--green {
+         @apply shadow-green;
+      }
+
+      &--yellow {
+         @apply shadow-yellow;
+      }
+
+      &--purple {
+         @apply shadow-purple;
+      }
+
+      &--indigo {
+         @apply shadow-indigo;
+      }
+   }
+   
+   &--body {
+      @apply bg-white flex-grow p-4 border-l-2 border-b-1 border-gray-200 overflow-y-scroll;
+   }
+   
+   &--footer {
+      @apply h-20 p-4 border-l-2 border-gray-200 flex-shrink-0 flex items-center;
+   }
+}

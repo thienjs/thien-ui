@@ -1,0 +1,67 @@
+.badge {
+   @apply text-white text-sm font-semibold tracking-wide px-2 py-1 rounded;
+
+   &--small {
+      @apply px-1.5 py-0.5;
+   }
+   
+   &--rounded {
+      @apply rounded-full;
+   }
+   
+   &--default--blue {
+      @apply text-blue-500 bg-blue-0;
+   }
+   
+   &--default--red {
+      @apply text-red-500 bg-red-0;
+   }
+   
+   &--default--green {
+      @apply text-green-500 bg-green-0;
+   }
+   
+   &--default--yellow {
+      @apply text-yellow-500 bg-yellow-0;
+   }
+   
+   &--default--purple {
+      @apply text-purple-500 bg-purple-0;
+   }
+   
+   &--default--indigo {
+      @apply text-indigo-500 bg-indigo-0;
+   }
+   
+   &--default--gray {
+      @apply text-gray-900 bg-gray-100;
+   }
+
+   &--solid--blue {
+      @apply bg-gradient-to-b border-1 border-blue-400 from-blue-300 to-blue-400;
+   }
+   
+   &--solid--red {
+      @apply bg-gradient-to-b border-1 border-red-400 from-red-300 to-red-400;
+   }
+   
+   &--solid--green {
+      @apply bg-gradient-to-b border-1 border-green-400 from-green-300 to-green-400;
+   }
+   
+   &--solid--yellow {
+      @apply bg-gradient-to-b border-1 border-yellow-400 from-yellow-300 to-yellow-400;
+   }
+   
+   &--solid--purple {
+      @apply bg-gradient-to-b border-1 border-purple-400 from-purple-300 to-purple-400;
+   }
+   
+   &--solid--indigo {
+      @apply bg-gradient-to-b border-1 border-indigo-400 from-indigo-300 to-indigo-400;
+   }
+   
+   &--solid--gray {
+      @apply bg-gradient-to-b border-1 border-gray-800 from-gray-700 to-gray-800;
+   }
+}

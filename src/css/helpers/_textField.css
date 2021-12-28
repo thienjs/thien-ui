@@ -1,0 +1,28 @@
+.text-field {
+   @apply h-10 px-2 font-sans text-sm text-gray-1000 placeholder-gray-600 bg-white border-1 border-gray-200 shadow-gray rounded appearance-none outline-none transition duration-200 ease-in-out;
+   
+   &:disabled {
+      @apply text-gray-600 select-none bg-gray-0 shadow-none pointer-events-auto cursor-not-allowed !important;
+   }
+   
+   &:focus,
+   &--with-elements:focus {
+      @apply outline-none;
+   }
+   
+   &--default:focus {
+      @apply shadow-outline-blue border-blue-500;
+   }
+
+   &--invalid:focus {
+      @apply shadow-outline-red border-red-500;
+   }
+  
+   &--with-elements {
+      @apply flex-grow h-full placeholder-gray-600;
+   }
+
+   &--small {
+      @apply h-8;
+   }
+}

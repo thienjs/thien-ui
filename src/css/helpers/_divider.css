@@ -1,0 +1,7 @@
+.divider {
+   @apply border-gray-200;
+
+   &--vertical {
+      @apply transform rotate-90;
+   }
+}

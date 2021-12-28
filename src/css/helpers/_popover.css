@@ -1,0 +1,133 @@
+.popover {
+   @apply inline-block z-10 transform pointer-events-auto;
+
+   /* Popover Positions */
+   &--top-left {
+      @apply translate-x-0 translate-y-0;
+   }
+
+   &--top-center {
+      @apply -translate-x-1/2 translate-y-0;
+   }
+
+   &--top-right {
+      @apply -translate-x-full translate-y-0;
+   }
+
+   &--center-left {
+      @apply translate-x-0 -translate-y-1/2;
+   }
+
+   &--center-center {
+      @apply -translate-x-1/2 -translate-y-1/2;
+   }
+
+   &--center-right {
+      @apply -translate-x-full -translate-y-1/2;
+   }
+
+   &--bottom-left {
+      @apply translate-x-0 -translate-y-full;
+   }
+
+   &--bottom-center {
+      @apply -translate-x-1/2 -translate-y-full;
+   }
+
+   &--bottom-right {
+      @apply -translate-x-full -translate-y-full;
+   }
+
+   /* Anchor Positions */
+   &--anchor {
+      @apply h-0 w-0 absolute pointer-events-none;
+
+      &--top-left {
+         @apply top-0 left-0;
+      }
+
+      &--top-center {
+         @apply top-0 left-1/2;
+      }
+
+      &--top-right {
+         @apply top-0 left-full;
+      }
+
+      &--center-left {
+         @apply top-1/2 left-0;
+      }
+
+      &--center-center {
+         @apply top-1/2 left-1/2;
+      }
+
+      &--center-right {
+         @apply top-1/2 left-full;
+      }
+
+      &--bottom-left {
+         @apply top-full left-0;
+      }
+
+      &--bottom-center {
+         @apply top-full left-1/2;
+      }
+
+      &--bottom-right {
+         @apply top-full left-full;
+      }
+   }
+
+   /* Position Relative Wrapper */
+   &--wrapper {
+      @apply relative inline-block;
+   }
+
+   /* Colors */
+   &--blue {
+      @apply shadow-md-blue;
+   }
+   
+   &--red {
+      @apply shadow-md-red;
+   }
+   
+   &--green {
+      @apply shadow-md-green;
+   }
+   
+   &--yellow {
+      @apply shadow-md-yellow;
+   }
+   
+   &--purple {
+      @apply shadow-md-purple;
+   }
+   
+   &--indigo {
+      @apply shadow-md-indigo;
+   }
+
+   &--gray,
+   &--white {
+      @apply shadow-md-gray;
+   }
+
+   /* Old Position Styles */
+   /* &--to-bl {
+      @apply mt-2 absolute left-0 top-full;
+   }
+
+   &--to-br {
+      @apply mt-2 absolute right-0 top-full;
+   }
+
+   &--to-tl {
+      @apply mb-2 absolute left-0 bottom-full;
+   }
+
+   &--to-tr {
+      @apply mb-2 absolute right-0 bottom-full;
+   } */
+}

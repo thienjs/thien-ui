@@ -1,0 +1,51 @@
+.radio {
+   @apply mr-2 h-5 w-5 bg-white shadow-gray border-1 border-gray-200 rounded-full outline-none appearance-none cursor-pointer flex items-center justify-center;
+
+   &:not([disabled]):hover {
+      @apply bg-gradient-to-b from-gray-0 to-gray-100;
+   }
+
+   &:disabled {
+      @apply select-none text-gray-500 bg-gray-0 border-1 border-gray-200 shadow-gray;
+   }
+   
+   &--blue:not([disabled]):checked {
+      @apply bg-gradient-to-b from-blue-400 to-blue-500 border-2 border-blue-100 shadow-none animate-small-ping-blue;
+   }
+   
+   &--red:not([disabled]):checked {
+      @apply bg-gradient-to-b from-red-400 to-red-500 border-2 border-red-100 shadow-none animate-small-ping-red;
+   }
+   
+   &--green:not([disabled]):checked {
+      @apply bg-gradient-to-b from-green-400 to-green-500 border-2 border-green-100 shadow-none animate-small-ping-green;
+   }
+   
+   &--yellow:not([disabled]):checked {
+      @apply bg-gradient-to-b from-yellow-400 to-yellow-500 border-2 border-yellow-100 shadow-none animate-small-ping-yellow;
+   }
+   
+   &--purple:not([disabled]):checked {
+      @apply bg-gradient-to-b from-purple-400 to-purple-500 border-2 border-purple-100 shadow-none animate-small-ping-purple;
+   }
+   
+   &--indigo:not([disabled]):checked {
+      @apply bg-gradient-to-b from-indigo-400 to-indigo-500 border-2 border-indigo-100 shadow-none animate-small-ping-indigo;
+   }
+   
+   &--wrapper {
+      @apply mr-4 flex cursor-pointer items-center;
+            
+      &--disabled {
+         @apply cursor-not-allowed;
+      }
+   }
+   
+   &--label {
+      @apply text-sm text-gray-1000 select-none;
+   }
+
+   &--group {
+      @apply flex;
+   }
+}

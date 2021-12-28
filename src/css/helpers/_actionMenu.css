@@ -1,0 +1,66 @@
+.action-menu {
+   &--popover {
+      @apply py-1;
+   }
+
+   &--item {
+      @apply mx-1 h-8 px-2 text-sm rounded flex items-center cursor-pointer select-none whitespace-nowrap transition duration-100 ease-in-out;
+
+      &--small {
+         @apply h-6;
+      }
+
+      &--blue:hover {
+         @apply text-blue-500 bg-blue-0;
+      }
+      &--blue:active {
+         @apply bg-blue-100;
+      }
+      
+      &--red:hover {
+         @apply text-red-500 bg-red-0;
+      }
+      &--red:active {
+         @apply bg-red-100;
+      }
+   
+      &--green:hover {
+         @apply text-green-500 bg-green-0;
+      }
+      &--green:active {
+         @apply bg-green-100;
+      }
+   
+      &--yellow:hover {
+         @apply text-yellow-500 bg-yellow-0;
+      }
+      &--yellow:active {
+         @apply bg-yellow-100;
+      }
+   
+      &--purple:hover {
+         @apply text-purple-500 bg-purple-0;
+      }
+      &--purple:active {
+         @apply bg-purple-100;
+      }
+   
+      &--indigo:hover {
+         @apply text-indigo-500 bg-indigo-0;
+      }
+      &--indigo:active {
+         @apply bg-indigo-100;
+      }
+   
+      &--white:hover {
+         @apply bg-gray-100;
+      } 
+      &--white:active {
+         @apply bg-gray-200;
+      }
+   }
+
+   &--icon {
+      @apply -ml-0.5 mr-2;
+   }
+}

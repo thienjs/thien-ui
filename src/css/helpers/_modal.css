@@ -1,0 +1,47 @@
+.modal {
+   @apply p-4 shadow-dark-gray;
+
+   &--xs {
+      @apply w-3xs;
+   }
+
+   &--sm {
+      @apply w-2xs;
+   }
+   
+   &--md {
+      @apply w-xs;
+   }
+   
+   &--lg {
+      @apply w-md;
+   }
+   
+   &--xl {
+      @apply w-lg;
+   }
+   
+   &--2xl {
+      @apply w-xl;
+   }
+   
+   &--3xl {
+      @apply w-2xl;
+   }
+   
+   &--background {
+      @apply bg-opacity-50 bg-gray-200 fixed top-0 left-0 flex justify-center items-center h-screen w-screen z-10;
+   }
+   
+   &--header {
+      @apply text-xl font-semibold;
+   }
+   
+   &--body {
+      @apply mt-2 text-sm;
+   }
+   
+   &--footer {
+      @apply mt-4;
+   }
+}

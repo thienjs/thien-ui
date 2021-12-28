@@ -1,0 +1,58 @@
+.switch {
+  @apply w-8 h-5 mr-2 px-1 border-1 border-gray-200 shadow-gray bg-gradient-to-b from-gray-200 to-gray-300 rounded-full cursor-pointer flex items-center justify-between;
+
+  &--disabled {
+    @apply bg-gradient-to-b from-gray-0 to-gray-0 cursor-not-allowed pointer-events-none !important;
+  }
+
+  &--checkbox {
+    @apply h-0 w-0 hidden;
+  }
+
+  &--label {
+    @apply  text-sm text-gray-1000 select-none;
+  }
+
+  &--checkbox:checked + &--blue {
+    @apply bg-gradient-to-b from-blue-400 to-blue-500 border-1 border-blue-500 shadow-blue;
+  }
+  
+  &--checkbox:checked + &--red {
+    @apply bg-gradient-to-b from-red-400 to-red-500 border-1 border-red-500 shadow-red;
+  }
+  
+  &--checkbox:checked + &--green {
+    @apply bg-gradient-to-b from-green-400 to-green-500 border-1 border-green-500 shadow-green;
+  }
+  
+  &--checkbox:checked + &--purple {
+    @apply bg-gradient-to-b from-purple-400 to-purple-500 border-1 border-purple-500 shadow-purple;
+  }
+  
+  &--checkbox:checked + &--indigo {
+    @apply bg-gradient-to-b from-indigo-400 to-indigo-500 border-1 border-indigo-500 shadow-indigo;
+  }
+
+  &--button {
+    @apply h-3.5 w-3.5 bg-white transition duration-200 ease-in-out rounded-full;
+    content: '';
+
+    &--disabled {
+      @apply bg-gray-200 !important;
+    }
+  }
+
+  &--checkbox:checked + .switch &--button {
+    @apply translate-x-2;
+  }
+
+  &--wrapper {
+    @apply cursor-pointer inline-flex items-center;
+
+    &--disabled {
+      @apply cursor-not-allowed;
+    }
+ }
+}
+
+

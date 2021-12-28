@@ -1,0 +1,15 @@
+.text-area {
+   @apply p-2 font-sans text-sm text-gray-1000 placeholder-gray-600 bg-white border-1 border-gray-200 shadow-gray rounded appearance-none outline-none transition duration-200 ease-in-out;
+
+   &:disabled {
+      @apply text-gray-600 select-none bg-gray-0 shadow-none cursor-not-allowed;
+   }
+
+   &--default:focus {
+      @apply shadow-outline-blue border-blue-500;
+   }
+
+   &--invalid:focus {
+      @apply shadow-outline-red border-red-500;
+   }
+}

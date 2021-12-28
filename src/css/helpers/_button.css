@@ -1,0 +1,226 @@
+.button {
+   @apply h-10 px-4 font-sans text-sm rounded flex items-center justify-center;
+   
+   &--small {
+      @apply h-8;
+   }
+
+   &--primary--disabled {
+      @apply select-none text-gray-500 bg-gray-0 border-1 border-gray-200 shadow-gray pointer-events-auto cursor-not-allowed !important;
+   }
+   
+   &--secondary--disabled {
+      @apply select-none text-gray-500 bg-gray-0 pointer-events-auto cursor-not-allowed !important;
+   }
+
+   &--primary--white {
+      @apply outline-none text-gray-1000 bg-gradient-to-b from-white to-gray-0 border-1 border-gray-200 shadow-gray transition-colors duration-200;
+   }
+   &--primary--white[data-animation-state=true] {
+      @apply animate-btn-ping-gray;
+   }
+   &--primary--white:active {
+      @apply shadow-none;
+   }
+   &--primary--white:hover {
+      @apply border-1 border-gray-300;
+   }
+   
+   &--primary--blue {
+      @apply outline-none text-white bg-gradient-to-b from-blue-400 to-blue-500 border-1 border-blue-500 shadow-blue;
+   }
+   &--primary--blue[data-animation-state=true] {
+      @apply animate-btn-ping-blue;
+   }
+   &--primary--blue:active {
+      @apply shadow-none;
+   }
+   &--primary--blue:hover {
+      @apply bg-gradient-to-b from-blue-300 to-blue-400 border-1 border-blue-300;
+   }
+   
+   &--primary--red {
+      @apply outline-none text-white bg-gradient-to-b from-red-400 to-red-500 border-1 border-red-500 shadow-red;
+   }
+   &--primary--red[data-animation-state=true] {
+      @apply animate-btn-ping-red;
+   }
+   &--primary--red:active {
+      @apply shadow-none;
+   }
+   &--primary--red:hover {
+      @apply bg-gradient-to-b from-red-300 to-red-400 border-1 border-red-300;
+   }
+   
+   &--primary--green {
+      @apply outline-none text-white bg-gradient-to-b from-green-400 to-green-500 border-1 border-green-500 shadow-green;
+   }
+   &--primary--green[data-animation-state=true] {
+      @apply animate-btn-ping-green;
+   }
+   &--primary--green:active {
+      @apply shadow-none;
+   }
+   &--primary--green:hover {
+      @apply bg-gradient-to-b from-green-300 to-green-400 border-1 border-green-300;
+   }
+   
+   &--primary--yellow {
+      @apply outline-none text-white bg-gradient-to-b from-yellow-400 to-yellow-500 border-1 border-yellow-500 shadow-yellow;
+   }
+   &--primary--yellow[data-animation-state=true] {
+      @apply animate-btn-ping-yellow;
+   }
+   &--primary--yellow:active {
+      @apply shadow-none;
+   }
+   &--primary--yellow:hover {
+      @apply bg-gradient-to-b from-yellow-300 to-yellow-400 border-1 border-yellow-300;
+   }
+   
+   &--primary--purple {
+      @apply outline-none text-white bg-gradient-to-b from-purple-400 to-purple-500 border-1 border-purple-500 shadow-purple;
+   }
+   &--primary--purple[data-animation-state=true] {
+      @apply animate-btn-ping-purple;
+   }
+   &--primary--purple:active {
+      @apply shadow-none;
+   }
+   &--primary--purple:hover {
+      @apply bg-gradient-to-b from-purple-300 to-purple-400 border-1 border-purple-300;
+   }
+   
+   &--primary--indigo {
+      @apply outline-none text-white bg-gradient-to-b from-indigo-400 to-indigo-500 border-1 border-indigo-500 shadow-indigo;
+   }
+   &--primary--indigo[data-animation-state=true] {
+      @apply animate-btn-ping-indigo;
+   }
+   &--primary--indigo:active {
+      @apply shadow-none;
+   }
+   &--primary--indigo:hover {
+      @apply bg-gradient-to-b from-indigo-300 to-indigo-400 border-1 border-indigo-300;
+   }
+   
+   &--secondary--white {
+      @apply text-gray-1000 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--white[data-animation-state=true] {
+      @apply border-gray-200 animate-btn-ping-gray;
+   }
+   &--secondary--white:hover {
+      @apply bg-gray-0;
+   }
+   
+   &--secondary--blue {
+      @apply text-blue-500 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--blue[data-animation-state=true] {
+      @apply border-blue-100 animate-btn-ping-blue;
+   }
+   &--secondary--blue:hover {
+      @apply bg-blue-0;
+   }
+   
+   &--secondary--red {
+      @apply text-red-500 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--red[data-animation-state=true] {
+      @apply border-red-100 animate-btn-ping-red;
+   }
+   &--secondary--red:hover {
+      @apply bg-red-0;
+   }
+   
+   &--secondary--green {
+      @apply text-green-500 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--green[data-animation-state=true] {
+      @apply border-green-100 animate-btn-ping-green;
+   }
+   &--secondary--green:hover {
+      @apply bg-green-0;
+   }
+   
+   &--secondary--yellow {
+      @apply text-gray-1000 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--yellow[data-animation-state=true] {
+      @apply border-yellow-200 animate-btn-ping-yellow;
+   }
+   &--secondary--yellow:hover {
+      @apply bg-yellow-100;
+   }
+   
+   &--secondary--purple {
+      @apply text-purple-500 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--purple[data-animation-state=true] {
+      @apply border-purple-100 animate-btn-ping-purple;
+   }
+   &--secondary--purple:hover {
+      @apply bg-purple-0;
+   }
+   
+   &--secondary--indigo {
+      @apply text-indigo-500 border-1 outline-none;
+      background-color: transparent;
+      border-color: transparent;
+   }
+   &--secondary--indigo[data-animation-state=true] {
+      @apply border-indigo-100 animate-btn-ping-indigo;
+   }
+   &--secondary--indigo:hover {
+      @apply bg-indigo-0;
+   }
+   
+   &--tertiary--blue {
+      @apply text-blue-500 border-1 border-blue-300;
+      background-color: transparent;
+   }
+   &--tertiary--blue[data-animation-state=true] {
+      @apply outline-none animate-btn-ping-blue;
+   }
+   &--tertiary--blue:hover {
+      @apply bg-blue-0;
+   }
+   
+   &--other--blue {
+      @apply text-blue-500 bg-white border-1 border-gray-200 shadow-gray;
+   }
+   &--other--blue[data-animation-state=true] {
+      @apply outline-none animate-btn-ping-blue;
+   }
+   &--other--blue:active {
+      @apply bg-blue-0 shadow-none;
+   }
+   &--other--blue:hover {
+      @apply bg-gray-0;
+   }
+
+   &--left-icon {
+      @apply h-4 w-4 mr-2 -ml-1;
+   }
+   
+   &--right-icon {
+      @apply h-4 w-4 ml-2 -mr-1;
+   }
+
+   &--loader {
+      @apply mx-2 animate-spin;
+   }
+}
